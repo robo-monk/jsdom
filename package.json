@@ -89,6 +89,7 @@
     "./lib/jsdom/living/websockets/WebSocket-impl.js": "./lib/jsdom/living/websockets/WebSocket-impl-browser.js"
   },
   "scripts": {
+    "bundle": "browserify lib/api.js | terser --compress --mangle > jsdom.js",
     "prepare": "yarn convert-idl && yarn generate-js-globals",
     "pretest": "yarn prepare && yarn init-wpt",
     "test-wpt": "mocha test/web-platform-tests/run-wpts.js",
