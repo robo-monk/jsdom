@@ -2,6 +2,7 @@
     <img width="100" height="100" src="logo.svg" alt=""><br>
     jsdom
 </h1>
+
 # Bundle all of JSDOM to one file:
 You need:
 `yarn add -g terser browserify`
